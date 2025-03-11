@@ -1,3 +1,4 @@
+import Circle from './Circle.js';
 import Feature from './Feature.js';
 import FeatureCollection from './FeatureCollection.js';
 import GeometryCollection from './GeometryCollection.js';
@@ -7,9 +8,10 @@ import MultiPoint from './MultiPoint.js';
 import MultiPolygon from './MultiPolygon.js';
 import Point from './Point.js';
 import Polygon from './Polygon.js';
+import Rectangle from './Rectangle.js';
 
 export default {
-  title: 'GeoJSON',
+  title: 'GeoJSON_BP',
   oneOf: [
     Point,
     LineString,
@@ -20,5 +22,7 @@ export default {
     GeometryCollection,
     Feature,
     FeatureCollection,
+    Circle,
+    Rectangle
   ],
 };
