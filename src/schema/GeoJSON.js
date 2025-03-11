@@ -23,6 +23,6 @@ export default {
     Feature,
     FeatureCollection,
     Circle,
-    Rectangle
+    Rectangle,
   ],
 };

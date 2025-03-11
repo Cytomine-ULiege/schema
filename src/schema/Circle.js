@@ -11,7 +11,7 @@ export default {
       enum: ['Feature'],
     },
     id: {
-      oneOf: [{ type: 'number' }, { type: 'string' }],
+      oneOf: [{type: 'number'}, {type: 'string'}],
     },
     properties: {
       required: ['subType', 'radius'],
@@ -21,9 +21,9 @@ export default {
           enum: ['Circle'],
         },
         radius: {
-          type: 'number'
+          type: 'number',
         },
-      }
+      },
     },
     geometry: {
       oneOf: [

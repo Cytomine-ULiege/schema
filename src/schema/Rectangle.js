@@ -11,21 +11,19 @@ export default {
       enum: ['Feature'],
     },
     id: {
-      oneOf: [{ type: 'number' }, { type: 'string' }],
+      oneOf: [{type: 'number'}, {type: 'string'}],
     },
     properties: {
       required: ['subType'],
       properties: {
         subType: {
-            type: 'string',
-            enum: ['Rectangle'],
-          },
-      }
+          type: 'string',
+          enum: ['Rectangle'],
+        },
+      },
     },
     geometry: {
-      oneOf: [
-        Polygon,
-      ]
+      oneOf: [Polygon]
     },
     bbox: BoundingBox,
   },
