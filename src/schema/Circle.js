@@ -26,9 +26,7 @@ export default {
       },
     },
     geometry: {
-      oneOf: [
-        Point,
-      ]
+      oneOf: [Point],
     },
     bbox: BoundingBox,
   },

@@ -23,7 +23,7 @@ export default {
       },
     },
     geometry: {
-      oneOf: [Polygon]
+      oneOf: [Polygon],
     },
     bbox: BoundingBox,
   },
