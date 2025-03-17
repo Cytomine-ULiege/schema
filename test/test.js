@@ -9,9 +9,9 @@ valid('MultiPolygon.json', 'valid/multipolygon/**/*.json');
 valid('GeometryCollection.json', 'valid/geometrycollection/**/*.json');
 valid('Feature.json', 'valid/feature/**/*.json');
 valid('FeatureCollection.json', 'valid/featurecollection/**/*.json');
-//valid('Circle.json', 'valid/circle/**/*.json');
-//valid('Rectangle.json', 'valid/rectangle/**/*.json');
-//valid('GeoJSON.json', 'valid/**/*.json');
+valid('Circle.json', 'valid/circle/**/*.json');
+valid('Rectangle.json', 'valid/rectangle/**/*.json');
+valid('GeoJSON.json', 'valid/**/*.json');
 
 invalid('Point.json', 'invalid/**/*.json');
 invalid('LineString.json', 'invalid/**/*.json');

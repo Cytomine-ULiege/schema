@@ -2,8 +2,8 @@
   "type": "Feature",
   "id": "1",
   "geometry": {
-    "type": "Point",
-    "coordinates": [0, 0]
+    "type": "Polygon",
+    "coordinates": [[[5,25], [14,25], [14,29], [5,29], [5,25]]]
   },
   "properties": {
     "subType": "Rectangle"

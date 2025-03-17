@@ -22,6 +22,7 @@ export default {
     properties: {
       oneOf: [
         {type: 'null'},
+        {type: 'object'},
         {
           type: 'object',
           not: {
