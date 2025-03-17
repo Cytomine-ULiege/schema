@@ -14,6 +14,7 @@ export default {
       oneOf: [{type: 'number'}, {type: 'string'}],
     },
     properties: {
+      type: 'object',
       required: ['subType'],
       properties: {
         subType: {
@@ -22,9 +23,7 @@ export default {
         },
       },
     },
-    geometry: {
-      oneOf: [Polygon],
-    },
+    geometry: Polygon,
     bbox: BoundingBox,
   },
 };

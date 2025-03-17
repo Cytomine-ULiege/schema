@@ -1,0 +1,9 @@
+{
+  "type": "Feature",
+  "id": "1",
+  "properties": {
+    "name": "no geometry",
+    "subType": "Circle",
+    "radius": 10
+  }
+}

@@ -20,7 +20,35 @@ export default {
       oneOf: [{type: 'number'}, {type: 'string'}],
     },
     properties: {
-      oneOf: [{type: 'null'}, {type: 'object'}],
+      oneOf: [
+        {type: 'null'},
+        {
+          type: 'object',
+          not: {
+            properties: {
+              subType: {
+                type: 'string',
+                enum: ['Circle'],
+              },
+              radius: {
+                type: 'number',
+                minimum: 0,
+              },
+            },
+          },
+        },
+        {
+          type: 'object',
+          not: {
+            properties: {
+              subType: {
+                type: 'string',
+                enum: ['Circle', 'Rectangle'],
+              },
+            },
+          },
+        },
+      ],
     },
     geometry: {
       oneOf: [
