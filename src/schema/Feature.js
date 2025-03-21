@@ -20,7 +20,13 @@ export default {
       oneOf: [{type: 'number'}, {type: 'string'}],
     },
     properties: {
-      oneOf: [{type: 'null'}, {type: 'object'}],
+      type: 'object',
+      required: ['path_class_name'],
+      properties: {
+        path_class_name: {
+          type: 'string',
+        },
+      },
     },
     geometry: {
       oneOf: [
