@@ -14,6 +14,7 @@ export default {
       oneOf: [{type: 'number'}, {type: 'string'}],
     },
     properties: {
+      type: 'object',
       required: ['subType', 'radius'],
       properties: {
         subType: {
@@ -25,9 +26,7 @@ export default {
         },
       },
     },
-    geometry: {
-      oneOf: [Point],
-    },
+    geometry: Point,
     bbox: BoundingBox,
   },
 };

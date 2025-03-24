@@ -2,7 +2,7 @@
 import path from 'path';
 
 async function main() {
-  const baseURL = 'https://cytomine-uliege.github.io/';
+  const baseURL = 'https://cytomine-uliege.github.io/schema/';
   const command = path.basename(process.argv[1]);
   const usage = `${command} <input>
 
